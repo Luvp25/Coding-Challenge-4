@@ -90,7 +90,10 @@ for (let i = 0; i < 3; i++){
     }
 }
 
+let product = products[0];
+for(let key in product){
+    console.log(`${key}: ${product}`)
+}
+   
 
-    
 
-    
