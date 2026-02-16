@@ -60,4 +60,37 @@ for (let product of products) {
     // console.log(`Product: ${product.Name} | New Price: $${product.price.toFixed(2)}`);
 
     }
+
+
+// Array to create customerType
+let customerType = ["regular", "student", "senior"];
+
+//for loop to simulate a checkout process for 3 customers.
+for (let i = 0; i < 3; i++){
+    let customersType = customerType[i]
+    let extraDiscount = 0;
+    if(customerType == "regular"){
+            extraDiscount = 0;
+    }else if(customerType == "student"){
+            extraDiscount = 0.05;
+    }else if(customerType == "senior"){
+            extraDiscount = 0.07;
+    }
+    //calculate discounted total, reduced product count, and customer number and cost
+    let totalCost = 0;
+    for (let product of products){
+        if(product.inventory > 0){
+            let finalPrice = product.price * (1-extraDiscount);
+
+            totalCost += finalPrice;
+            product.inventory--;
+
+            console.log(`Customer ${i + 1} (${customerType}): Total Cost: $${totalCost.toFixed(2)}`);
+
+    
+        }
+    }
+}
+    
+
     
