@@ -1,0 +1,1 @@
+This code helps calculate a discounted price for 5 different products using JS conditionals and loops.

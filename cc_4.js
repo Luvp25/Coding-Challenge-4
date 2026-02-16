@@ -1,7 +1,6 @@
 // Array for all product information
 
 let products = [
-
 {
     Name: "Soccer Ball",
     category: "Sports",
@@ -87,10 +86,11 @@ for (let i = 0; i < 3; i++){
 
             console.log(`Customer ${i + 1} (${customerType}): Total Cost: $${totalCost.toFixed(2)}`);
 
-    
         }
     }
 }
+
+
     
 
     
